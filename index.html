@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>肌秘官方网站</title>
+    <style></style>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+<div class='header'></div>
+<div id="container">
+    <div class="page page0">
+        <div class="title">
+            <div>Natural Care in New Zealand</div>
+            <div>designed to make your life better</div>
+        </div>
+        <div class="line">--------------</div>
+        <div class="more">View more about us</div>
+        <img class="sculpt" width="500" src="./img/P0/sculpt.png">
+    </div>
+    <!-- page1 -->
+    <div class="page page1"></div>
+    <div class="page page2"></div>
+    <div class="page page3"></div>
+</div>
+
+<!--右侧圆点 pof-->
+<div id="circles">
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+
+<script src='js/tool/jquery-1.8.3.min.js'></script>
+<script src='js/tool/jquery.mousewheel.min.js'></script>
+<script src='js/tool/jquery.easie.js'></script>
+<script src='js/tool/velocity.min.js'></script>
+<script src='js/tool/velocity.ui.js'></script>
+<script src='js/module/header.js'></script>
+<script src='js/index/index.js'></script>
+<!--轮播整个框架 和出场入场有关的代码-->
+<script>
+    $(function () {
+        var header = new Header('.header', null);
+        header.initCur(0)
+        window.header = header;
+        $('body').animate({'opacity': 1});
+    })
+</script>
+</body>
+</html>
