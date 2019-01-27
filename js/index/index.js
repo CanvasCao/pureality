@@ -136,12 +136,12 @@
                 $page0.find('.sculpt').velocity({
                     'opacity': 0,
                     'top': '100%',
-                    'translateX': '5',
-                    'translateY': '-236',
+                    'translateX': 5,
+                    'translateY': -176,
                 }, 0).delay(1000).velocity({
-                    'top': '60%',
+                    'top': '50%',
                     'opacity': 1,
-                }, (total+1000), 'ease');
+                }, (total + 1000), 'ease');
 
                 $page0.find('.title').velocity({
                     'left': '20%',
@@ -177,42 +177,41 @@
                 var total = 1200;
                 $page1.find('.sculpt').velocity({
                     'opacity': 0,
-                    top: '50%',
-                    left:'20%',
+                    left: '20%',
                     'translateX': -665,
                     'translateY': -186,
                 }, 0).delay(2000).velocity({
-                    left:'50%',
+                    left: '50%',
                     'opacity': 1,
-                }, (total+1000), 'ease');
+                }, (total + 1000), 'ease');
 
                 $page1.find('.title').velocity({
-                    'left': '50%',
+                    'left': '20%',
                     'opacity': 0,
-                    'translateX': '-374',
+                    'translateX': 6,
                     'translateY': '-50',
                 }, 0).delay(500).velocity({
-                    'left': '80%',
+                    'left': '50%',
                     'opacity': 1,
                 }, (total + 400), 'ease');
 
                 $page1.find('.line').velocity({
-                    'left': '120%',
+                    'left': '80%',
                     'opacity': 0,
-                    'translateX': -374,
+                    'translateX': 6,
                     'translateY': 35,
                 }, 0).delay(500).velocity({
-                    'left': '80%',
+                    'left': '50%',
                     'opacity': 1,
                 }, (total + 800), 'ease');
 
                 $page1.find('.more').velocity({
-                    'left': '50%',
+                    'left': '20%',
                     'opacity': 0,
-                    'translateX': -230,
+                    'translateX': 146,
                     'translateY': 60,
                 }, 0).delay(500).velocity({
-                    'left': '80%',
+                    'left': '50%',
                     'opacity': 1,
                 }, (total + 1200), 'ease');
             },
