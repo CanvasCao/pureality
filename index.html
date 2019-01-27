@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="user-scalable=no">
-          <!--content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"-->
+    <!--content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"-->
 
     <title>pureality</title>
     <style></style>
@@ -45,8 +45,24 @@
         </div>
         <img class="sculpt" width="800" src="./img/P1/sculpt.png">
     </div>
-    <div class="page page2"></div>
-    <div class="page page3"></div>
+    <div class="page page2">
+        <div class="title">
+            <div>Natural Extracts in New Zealand</div>
+            <div>Soothing & Restoring skin</div>
+        </div>
+        <div class="line">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="more">
+            VIEW ALL KIRIMA
+            <span class="arrow">▶</span>
+        </div>
+        <img class="sculpt" width="400" src="./img/P2/sculpt.png">
+    </div>
+    <div class="page page3 background-image-center">
+        Copyright© 2019 purealitycosmetics.com PO Box 8042, Nelson 7046
+    </div>
 </div>
 
 <!--右侧圆点 pof-->
@@ -70,8 +86,6 @@
     $(function () {
         var header = new Header('.header', null);
         header.initCur(0)
-        window.header = header;
-
         $('body').animate({'opacity': 1});
     })
 </script>

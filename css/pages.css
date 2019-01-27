@@ -84,8 +84,6 @@
 .page1 .title {
     color: #F4CC5E;
     opacity: 0.9;
-    word-break: break-all;
-    white-space: nowrap;
 }
 
 .page1 .title > div:nth-child(1) {
@@ -118,8 +116,48 @@
 
 /**********************************************************************************************/
 .page2 {
+    background: white;
+}
+
+.page2 .title {
+    opacity: 0.9;
+}
+
+.page2 .title > div:nth-child(1) {
+    color: rgb(204, 172, 23);
+    font-size: 33px;
+    margin-bottom: 3px;
+}
+
+.page2 .title > div:nth-child(2) {
+    color: #5E6568;
+    font-size: 28px;
+    text-align: center;
+}
+
+.page2 .line1 {
+    width: 325px;
+    height: 1px;
+    margin-bottom: 5px;
+    background: #948F89;
+}
+
+.page2 .line2 {
+    width: 80px;
+    height: 1px;
+    background: #948F89;
+    float: right;
+}
+
+.page2 .more {
+    color: rgb(204, 172, 23);
+    font-size: 20px;
 }
 
 /**********************************************************************************************/
 .page3 {
+    text-align: center;
+    padding-top: 40px;
+    background-image: url("../img/commonBG.jpg");
+    color: #C7A559;
 }

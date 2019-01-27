@@ -3,7 +3,7 @@
         //窗口宽高
         var winH = $(window).height();
         var winW = $(window).width();
-        var pageIndex = 1;
+        var pageIndex = 2;
         var ease = 'easeInOutQuart';
         var isPageVelocited = false;
 
@@ -21,10 +21,10 @@
         var $page3 = $pages.eq(3);
 
         //添加背景颜色
-        var colorArr = ['blue', 'red', 'blue', 'red',];
-        $pages.each(function (i, e) {
-            $(this).css('backgroundColor', colorArr[i]);
-        })
+        // var colorArr = ['blue', 'red', 'blue', 'red',];
+        // $pages.each(function (i, e) {
+        //     $(this).css('backgroundColor', colorArr[i]);
+        // })
 
 
         //Events....................................................................
@@ -120,7 +120,6 @@
                 isPageVelocited = false;
             }, 2000)
 
-            //var cirArr = [0, 1, 2, 3];//
             $cirLis.eq(pageIndex).addClass('cur').siblings().removeClass('cur');
 
             if (oldIndex != pageNum) { //如果是5到4这一步不需要出入场动画
@@ -216,16 +215,52 @@
                 }, (total + 1200), 'ease');
             },
             function () {
-            },
-            function () {
+                var total = 1200;
+                $page2.find('.sculpt').velocity({
+                    'opacity': 0,
+                    'top': '100%',
+                    'translateX': 55,
+                    'translateY': -186,
+                }, 0).delay(1000).velocity({
+                    'top': '50%',
+                    'opacity': 1,
+                }, (total + 1000), 'ease');
+
+                $page2.find('.title').velocity({
+                    'left': '20%',
+                    'opacity': 0,
+                    'translateX': -409,
+                    'translateY': -50,
+                }, 0).delay(500).velocity({
+                    'left': '50%',
+                    'opacity': 1,
+                }, (total + 400), 'ease');
+
+                $page2.find('.line').velocity({
+                    'left': '80%',
+                    'opacity': 0,
+                    'translateX': -334,
+                    'translateY': 35,
+                }, 0).delay(500).velocity({
+                    'left': '50%',
+                    'opacity': 1,
+                }, (total + 800), 'ease');
+
+                $page2.find('.more').velocity({
+                    'left': '20%',
+                    'opacity': 0,
+                    'translateX': -190,
+                    'translateY': 60,
+                }, 0).delay(500).velocity({
+                    'left': '50%',
+                    'opacity': 1,
+                }, (total + 1200), 'ease');
             },
             function () {
             },
         ];
 
         window.AnimateOutArr = AnimateOutArr = [
-            function () {
-            },
             function () {
             },
             function () {
