@@ -12,10 +12,18 @@
                 'background-color': 'inherit',
                 'box-shadow': 'none',
             },
-            // hrefArr: ['HOME'],//, '品牌故事', '产品详情', '联系我们'],
-            hrefArr: ['HOME', 'ABOUT US', 'PERSONAL CARE', 'CONTACT US'],
-            // urlArr: ['index.html']//, 'about-us.html', 'personal-care', 'contact-us']
-            urlArr: ['index.html', 'about-us.html', 'personal-care.html', 'contact-us.html']
+            hrefArr: [
+                'HOME',
+                // 'ABOUT US',
+                'PERSONAL CARE',
+                // 'CONTACT US'
+            ],
+            urlArr: [
+                'index.html',
+                // 'about-us.html',
+                'personal-care.html',
+                // 'contact-us.html'
+            ]
         };
         this.init();
     }

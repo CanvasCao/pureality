@@ -37,6 +37,20 @@
     white-space: nowrap;
 }
 
+.page0 .line1 {
+    width: 384px;
+    height: 1px;
+    margin-bottom: 5px;
+    background: #5E6568;
+}
+
+.page0 .line2 {
+    width: 80px;
+    height: 1px;
+    background: #5E6568;
+    float: right;
+}
+
 .page0 .title > div:nth-child(1) {
     font-size: 30px;
     margin-bottom: 3px;
@@ -49,6 +63,7 @@
 .page0 .more {
     color: #C7A559;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .page0 .sculpt {
