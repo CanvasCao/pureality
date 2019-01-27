@@ -83,7 +83,7 @@
 <script src='js/index/index.js'></script>
 <!--轮播整个框架 和出场入场有关的代码-->
 <script>
-    $(function () {
+    window.addEventListener('load', function () {
         var header = new Header('.header', null);
         header.initCur(0)
         $('body').animate({'opacity': 1});

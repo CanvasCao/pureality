@@ -3,7 +3,7 @@
         //窗口宽高
         var winH = $(window).height();
         var winW = $(window).width();
-        var pageIndex = 2;
+        var pageIndex = 0;
         var ease = 'easeInOutQuart';
         var isPageVelocited = false;
 
