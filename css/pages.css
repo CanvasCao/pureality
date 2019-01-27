@@ -7,6 +7,16 @@
     left: 0;
 }
 
+.more {
+    display: flex;
+    align-items: center;
+}
+
+.more .arrow {
+    font-size: 10px;
+    margin-left: 10px;
+}
+
 /*单页*/
 .page {
     box-sizing: border-box;
@@ -37,6 +47,15 @@
     white-space: nowrap;
 }
 
+.page0 .title > div:nth-child(1) {
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+.page0 .title > div:nth-child(2) {
+    font-size: 26.2px;
+}
+
 .page0 .line1 {
     width: 384px;
     height: 1px;
@@ -51,40 +70,57 @@
     float: right;
 }
 
-.page0 .title > div:nth-child(1) {
-    font-size: 30px;
-    margin-bottom: 3px;
-}
-
-.page0 .title > div:nth-child(2) {
-    font-size: 26.2px;
-}
-
 .page0 .more {
     color: #C7A559;
     font-size: 20px;
     cursor: pointer;
 }
 
-.page0 .sculpt {
-}
-
 /**********************************************************************************************/
-/*page1 第二页*/
 .page1 {
-    background: url("../img/P1/P1_BG.png") 100% 100%;
-    background-size: cover;
+    background-image: url("../img/P1/P1_BG.jpg");
+}
+
+.page1 .title {
+    color: #F4CC5E;
+    opacity: 0.9;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.page1 .title > div:nth-child(1) {
+    font-size: 32px;
+    margin-bottom: 3px;
+}
+
+.page1 .title > div:nth-child(2) {
+    font-size: 26.2px;
+}
+
+.page1 .line1 {
+    width: 364px;
+    height: 1px;
+    margin-bottom: 5px;
+    background: #948F89;
+}
+
+.page1 .line2 {
+    width: 80px;
+    height: 1px;
+    background: #948F89;
+    float: right;
+}
+
+.page1 .more {
+    color: rgb(211, 209, 207);
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /**********************************************************************************************/
-/*page2 第三页*/
 .page2 {
-    background: url("../img/P2/P2_BG.png") 100% 100%;
-    background-size: cover;
 }
 
-/*page3 第四页*/
+/**********************************************************************************************/
 .page3 {
-    background: url("../img/P3/P3_BG.png") 100% 100%;
-    background-size: cover;
 }

@@ -29,23 +29,23 @@ body {
     position: fixed;
     height: 70px;
     width: 15px;
-    top: 50%;
+    top: 42%;
     right: 3%;
 }
 
 #circles ul li {
     width: 8px;
-    height: 8px;
+    height: 40px;
     background-color: transparent;
-    border: 1px solid #3881e0;
+    border: 1px solid #C7A559;
     margin: 0 auto 10px;
     transition: all 0.8s ease 0s;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     cursor: pointer;
 }
 
 #circles ul li.cur {
-    background-color: #3881e0;
+    background-color: #C7A559;
 }
 
 .background-image-center {

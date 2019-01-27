@@ -3,7 +3,7 @@
         //窗口宽高
         var winH = $(window).height();
         var winW = $(window).width();
-        var pageIndex = 0;
+        var pageIndex = 1;
         var ease = 'easeInOutQuart';
         var isPageVelocited = false;
 
@@ -87,7 +87,7 @@
 
             isPageVelocited = true;
             var duration = 1000;
-            var lastPageHeight = 150;
+            var lastPageHeight = 100;
 
             //滚到底部 右侧点消失....................................................
             if (pageIndex == pageNum) {
@@ -133,10 +133,6 @@
         window.AnimateInArr = AnimateInArr = [
             function () {
                 var total = 1200;
-                // $page0.velocity({
-                //     'opacity': 0,
-                // }, 0).delay(0).velocity({'opacity': 1}, (total), 'ease');
-
                 $page0.find('.sculpt').velocity({
                     'opacity': 0,
                     'top': '100%',
@@ -145,7 +141,7 @@
                 }, 0).delay(1000).velocity({
                     'top': '60%',
                     'opacity': 1,
-                }, (total), 'ease');
+                }, (total+1000), 'ease');
 
                 $page0.find('.title').velocity({
                     'left': '20%',
@@ -178,6 +174,47 @@
                 }, (total + 1200), 'ease');
             },
             function () {
+                var total = 1200;
+                $page1.find('.sculpt').velocity({
+                    'opacity': 0,
+                    top: '50%',
+                    left:'20%',
+                    'translateX': -665,
+                    'translateY': -186,
+                }, 0).delay(2000).velocity({
+                    left:'50%',
+                    'opacity': 1,
+                }, (total+1000), 'ease');
+
+                $page1.find('.title').velocity({
+                    'left': '50%',
+                    'opacity': 0,
+                    'translateX': '-374',
+                    'translateY': '-50',
+                }, 0).delay(500).velocity({
+                    'left': '80%',
+                    'opacity': 1,
+                }, (total + 400), 'ease');
+
+                $page1.find('.line').velocity({
+                    'left': '120%',
+                    'opacity': 0,
+                    'translateX': -374,
+                    'translateY': 35,
+                }, 0).delay(500).velocity({
+                    'left': '80%',
+                    'opacity': 1,
+                }, (total + 800), 'ease');
+
+                $page1.find('.more').velocity({
+                    'left': '50%',
+                    'opacity': 0,
+                    'translateX': -230,
+                    'translateY': 60,
+                }, 0).delay(500).velocity({
+                    'left': '80%',
+                    'opacity': 1,
+                }, (total + 1200), 'ease');
             },
             function () {
             },
