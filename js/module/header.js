@@ -5,15 +5,17 @@
         this.data = data;
         this.config = {
             curJson: {
-                'background-color': '#3881e0',
-                color: 'white'
+                'background-color': '#C7A559',
+                'box-shadow': '2px -2px 2px rgba(0,0,0,0.4)',
             },
             oriJson: {
-                'background-color': 'white',
-                color: 'black'
+                'background-color': 'inherit',
+                'box-shadow': 'none',
             },
-            hrefArr: ['首页', '关于肌秘'],
-            urlArr: ['index.html', 'about.html']
+            // hrefArr: ['HOME'],//, '品牌故事', '产品详情', '联系我们'],
+            hrefArr: ['HOME', 'ABOUT US', 'PERSONAL CARE', 'CONTACT US'],
+            // urlArr: ['index.html']//, 'about-us.html', 'personal-care', 'contact-us']
+            urlArr: ['index.html', 'about-us.html', 'personal-care.html', 'contact-us.html']
         };
         this.init();
     }
@@ -31,56 +33,67 @@
         createDom: function () {
             $(this.C).html("<div class='hInnerC'></div>");//版心
 
-            $(this.C).find('.hInnerC').html("<div class='options'></div>");
+            $(this.C).find('.hInnerC').html(
+                "<div class='hLogo'><img src='./img/logo.png' width='100'></div>" +
+                "<div class='hOptions'></div>"
+            );
 
             var str = '';
             for (i = 0; i < this.config.hrefArr.length; i++) {
-                str += '<div>' + this.config.hrefArr[i] + '</div>';
+                str += '<span class="hOption">' + this.config.hrefArr[i] + '</span>';
 
             }
-            $(this.C).find('.options').html(str);
-
+            $(this.C).find('.hOptions').html(str);
 
         },
         initCSS: function () {
             var that = this;
-            //this.C就是class=.header的容器 自动fixed zindex=2 高度80
+
+            $(this.C).addClass('background-image-center');
+
             $(this.C).css({
                 position: 'fixed',
-                height: '80',
+                height: 108,
                 width: '100%',
-                'background-color': 'white',
-                'z-index': '100',
-                top: '0',
-                'box-shadow': '0px 3px 15px rgba(0, 0, 0, 0.4)'
+                'z-index': 100,
+                top: 0,
+                'background-image': 'url("./img/commonBG.jpg")',
+                overflow: 'hidden',
+                'box-shadow': '0px 1px 30px rgba(0,0,0,0.2)',
             })
-
 
             $(this.C).find('.hInnerC').css({
                 width: '1024',
                 margin: '0 auto',
                 height: '100%',
-                'box-sizing': 'border-box'
+                position: 'relative',
+                'padding-top': '10px',
             })
 
-            $(this.C).find('.options').css({
-                float: 'right',
-                'padding-top': '24px'
-            })
-
-            $(this.C).find('.options>div').css({
+            $(this.C).find('.hLogo').css({
                 'text-align': 'center',
-                display: 'block',
-                float: 'left',
-                width: '75',
-                height: '30',
-                'line-height': '30px',
-                'margin-right': '10px',
-                'border-radius': '20px',
-                'font-size': '12px',
-                padding: '0px 8px',
+            })
+
+            $(this.C).find('.hOptions').css({
+                position: 'absolute',
+                width: '100%',
+                bottom: -10,
+                left: 0,
+                'text-align': 'center',
+            })
+
+            $(this.C).find('.hOption').css({
+                'text-align': 'center',
+                display: 'inline-block',
+                height: 48,
+                'margin': '0 10px',
+                'border-top-left-radius': 16,
+                'border-top-right-radius': 16,
+                // 'font-size': '12px',
+                padding: '10px 24px',
                 cursor: 'pointer',
-                transition: 'all 0.2s ease 0s'
+                // transition: 'all 0.2s ease 0s',
+                color: '#5E6568',
             })
         },
         bindEvent: function () {
@@ -88,7 +101,7 @@
 
             //event...........................................
             //点击跳转
-            $(this.C).find('.options>div').each(function (i, e) {
+            $(this.C).find('.hOption').each(function (i, e) {
                 $(e).click(function () {
                     window.location.href = that.config.urlArr[i];
                 })
@@ -99,7 +112,11 @@
         },
         initCur: function (index) {
             var that = this;
-            $(this.C).find('.options>div').eq(index).css(that.config.curJson).siblings().css(that.config.oriJson);
+            $(this.C).find('.hOption')
+                .eq(index)
+                .css(that.config.curJson)
+                .siblings()
+                .css(that.config.oriJson);
         }
 
     }

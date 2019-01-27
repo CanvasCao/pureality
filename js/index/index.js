@@ -1,18 +1,18 @@
 (function () {
-    //#3881e0
     //窗口宽高
     var winH = $(window).height();
     var winW = $(window).width();
-    var pageIndex = 0//当前页面（初始化用）
-
+    var pageIndex = 0;
+    var ease = 'easeInOutQuart';
     var isPageVelocited = false;
-    //操作的jq对象
+
+    //jqMap........................
     var $cirs = $('#circles');
     var $cirLis = $cirs.find('li');
     var $con = $('#container');
     var $pages = $con.find('.page');
     var pageNum = $pages.length - 1;//最大索引数所以-1
-
+    var $header = $('.header');
     //jqPage对象
     var $page0 = $pages.eq(0);
     var $page1 = $pages.eq(1);
@@ -20,7 +20,7 @@
     var $page3 = $pages.eq(3);
 
     //添加背景颜色
-    var colorArr = ['#fff', '#fff', '#fff', 'white', 'white'];
+    var colorArr = ['blue', 'red', 'blue', 'red',];
     $pages.each(function (i, e) {
         $(this).css('backgroundColor', colorArr[i]);
     })
@@ -142,10 +142,10 @@
                 'top': '100%',
                 'translateX': '5',
                 'translateY': '-236',
-            }, 0).delay(0).velocity({
+            }, 0).delay(1000).velocity({
                 'top': '60%',
                 'opacity': 1,
-            }, (total ), 'ease');
+            }, (total), 'ease');
 
             $page0.find('.title').velocity({
                 'left': '80%',
@@ -193,6 +193,8 @@
     //init.............................................................
     $cirLis.eq(pageIndex).addClass('cur').siblings().removeClass('cur');
 
+
+    $header.velocity({top: '-100%'}).delay(1000).velocity({top: '0%'}, 2000, ease)
     $pages.eq(pageIndex).css({top: 0}).siblings('.page').css({top: '100%'}) //siblings 有page 也有pageSvg
     AnimateInArr[pageIndex]() //首页入场
 

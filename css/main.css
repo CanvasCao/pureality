@@ -3,8 +3,9 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    -webkit-user-select: none;
-    font-family: "Helvetica Neue", Helvetica, "PingFang SC", Arial, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", STHeiti, "华文细黑", sans-serif;
+    box-sizing: border-box;
+    /*-webkit-user-select: none;*/
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Microsoft Yahei";
 }
 
 body {
@@ -45,4 +46,9 @@ body {
 
 #circles ul li.cur {
     background-color: #3881e0;
+}
+
+.background-image-center {
+    background-size: cover;
+    background-position: center center;
 }

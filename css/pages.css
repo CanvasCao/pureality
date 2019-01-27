@@ -5,9 +5,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    /*box-sizing: border-box;*/
-    /*border: 20px solid #000;*/
-    /*overflow: hidden;*/
 }
 
 /*单页*/
@@ -21,7 +18,6 @@
     perspective: 1000px;
 }
 
-/*我让page里所有的第一层div都居中*/
 .page > * {
     position: absolute;
     top: 50%;
@@ -31,12 +27,12 @@
 /**********************************************************************************************/
 /*page0*/
 .page0 {
-    background: url("../img/P0/P0_BG.jpg") 100% 100%;
-    background-size: cover;
+    background-image: url("../img/P0/P0_BG.jpg");
 }
 
 .page0 .title {
-    color: #777;
+    color: #5E6568;
+    opacity: 0.9;
     word-break: break-all;
     white-space: nowrap;
 }
@@ -51,6 +47,7 @@
 }
 
 .page0 .more {
+    color: #C7A559;
     font-size: 20px;
 }
 
