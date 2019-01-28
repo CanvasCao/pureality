@@ -1,4 +1,9 @@
 /*容器*/
+body {
+    overflow: hidden;
+    opacity: 0;
+}
+
 #container {
     position: absolute;
     width: 100%;

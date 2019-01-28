@@ -6,23 +6,68 @@
           content="user-scalable=no">
     <!--content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"-->
     <title>pureality</title>
-    <style></style>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/personal-care.css" />
 </head>
 <body>
 <div class='header'></div>
+<div class="innerC">
+    <div class="products">
+        <div>
+            <div class="left background-image-center">
+                <div class="title">SHAMPOO</div>
+                <div class="subTitle">PUREALITY SILICON-FREE SHAMPOO</div>
+                <div class="desc1">
+                    FOR ALL HAIR TYPES <br />
+                    PARABEN & SILICON & MINERAL OIL FREE
+                </div>
+                <div class="desc2">
+                    DESIGNED IN NEW ZEALAND <br />
+                    30ml／1.0.fl.oz
+                </div>
+                <img height="500" src="./img/product/p1.png">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        Multiple surfactants and plant oils derived cleansers are combined to create a creamy lather
+                        that
+                        gently
+                        yet thoroughly cleanses the hair. Oxidized Corn Oil and Apple Seed Extract help add fullness and
+                        impart
+                        softness and shine. Suitable for all hair and scalp types when mildness is desired.
+                    </li>
+                    <li> DIRECTIONS: Lather your hair and rinse foam. If contact with eyes, rinse them immediately.</li>
+                    <li>INGREDIENTS: WATER, SODIUM LAURETH SULFATE, PEG-7 GLYCERYL COCOATE, AMMONIUM LAURETH SULFATE,
+                        COCAMIDOPROPYL BETAINE,POLYQUATERNIUM-10, GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE, DIPOTASSIUM
+                        GLYCYRRHIZATE, TETRASODIUM GLUTAMATE DIACETATE, HYDROXYACETOPHENONE, SODIUM CHLORIDE, SALICYLIC
+                        ACID,
+                        PEG-20 HYDROGENATED CASTOR OIL, SORBITAN OLEATE, CAPRYLIC/CAPRIC TRIGLYCERIDE, GLYCERYL
+                        CAPRYLATE,
+                        SQUALANE, CETEARYL ALCOHOL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, OXIDIZED CORN OIL, PYRUS
+                        MALUS
+                        (APPLE) SEED EXTRACT, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, OLEA EUROPAEA (OLIVE)
+                        FRUIT
+                        OIL, SIMMONDSIA CHINENSIS (JOJOBA) SEED EXTRACT, BUTYLENE GLYCOL, CAPRYLYL GLYCOL, LAURYL
+                        GLUCOSIDE,
+                        ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, ARGININE, FRAGRANCE.
+                    <li>
+                </ul>
+
+
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+
+</div>
 
 <script src='js/tool/jquery-1.8.3.min.js'></script>
-<script src='js/tool/jquery.easie.js'></script>
-<script src='js/tool/velocity.min.js'></script>
-<script src='js/tool/velocity.ui.js'></script>
 <script src='js/module/header.js'></script>
 <script>
-    $(function () {
+    window.addEventListener('load', function () {
         var header = new Header('.header', null);
         header.initCur(1)
-        window.header = header;
-
         $('body').animate({'opacity': 1});
     })
 </script>
