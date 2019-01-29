@@ -12,62 +12,84 @@
 <body>
 <div class='header'></div>
 <div class="innerC">
-    <div class="products">
-        <div>
-            <div class="left background-image-center">
-                <div class="title">SHAMPOO</div>
-                <div class="subTitle">PUREALITY SILICON-FREE SHAMPOO</div>
-                <div class="desc1">
-                    FOR ALL HAIR TYPES <br />
-                    PARABEN & SILICON & MINERAL OIL FREE
-                </div>
-                <div class="desc2">
-                    DESIGNED IN NEW ZEALAND <br />
-                    30ml／1.0.fl.oz
-                </div>
-                <img height="500" src="./img/product/p1.png">
-            </div>
-            <div class="right">
-                <ul>
-                    <li>
-                        Multiple surfactants and plant oils derived cleansers are combined to create a creamy lather
-                        that
-                        gently
-                        yet thoroughly cleanses the hair. Oxidized Corn Oil and Apple Seed Extract help add fullness and
-                        impart
-                        softness and shine. Suitable for all hair and scalp types when mildness is desired.
-                    </li>
-                    <li> DIRECTIONS: Lather your hair and rinse foam. If contact with eyes, rinse them immediately.</li>
-                    <li>INGREDIENTS: WATER, SODIUM LAURETH SULFATE, PEG-7 GLYCERYL COCOATE, AMMONIUM LAURETH SULFATE,
-                        COCAMIDOPROPYL BETAINE,POLYQUATERNIUM-10, GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE, DIPOTASSIUM
-                        GLYCYRRHIZATE, TETRASODIUM GLUTAMATE DIACETATE, HYDROXYACETOPHENONE, SODIUM CHLORIDE, SALICYLIC
-                        ACID,
-                        PEG-20 HYDROGENATED CASTOR OIL, SORBITAN OLEATE, CAPRYLIC/CAPRIC TRIGLYCERIDE, GLYCERYL
-                        CAPRYLATE,
-                        SQUALANE, CETEARYL ALCOHOL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, OXIDIZED CORN OIL, PYRUS
-                        MALUS
-                        (APPLE) SEED EXTRACT, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, OLEA EUROPAEA (OLIVE)
-                        FRUIT
-                        OIL, SIMMONDSIA CHINENSIS (JOJOBA) SEED EXTRACT, BUTYLENE GLYCOL, CAPRYLYL GLYCOL, LAURYL
-                        GLUCOSIDE,
-                        ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, ARGININE, FRAGRANCE.
-                    <li>
-                </ul>
-
-
-            </div>
-            <div style="clear: both;"></div>
-        </div>
-    </div>
+    <div class="products"></div>
 
 </div>
 
 <script src='js/tool/jquery-1.8.3.min.js'></script>
 <script src='js/module/header.js'></script>
+<script src='js/module/products.js'></script>
 <script>
+
     window.addEventListener('load', function () {
         var header = new Header('.header', null);
-        header.initCur(1)
+        header.initCur(1);
+        var products = new Products('.products',
+            {
+                products: [
+                    {
+                        title: 'SHAMPOO',
+                        subTitle: 'PUREALITY SILICON-FREE SHAMPOO',
+                        desc1: 'FOR ALL HAIR TYPES<br/>PARABEN & SILICON & MINERAL OIL FREE',
+                        desc2: 'DESIGNED IN NEW ZEALAND<br/> 30ml／1.0.fl.oz',
+                        productImg: './img/product/p1.png',
+                        descList: [
+                            'Multiple surfactants and plant oils derived cleansers are combined to create a creamy lather that gently yet thoroughly cleanses the hair. Oxidized Corn Oil and Apple Seed Extract help add fullness and impart softness and shine. Suitable for all hair and scalp types when mildness is desired.\n',
+                            'DIRECTIONS: Lather your hair and rinse foam. If contact with eyes, rinse them immediately.',
+                            'INGREDIENTS: WATER, SODIUM LAURETH SULFATE, PEG-7 GLYCERYL COCOATE, AMMONIUM LAURETH SULFATE, COCAMIDOPROPYL BETAINE,POLYQUATERNIUM-10, GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE, DIPOTASSIUM GLYCYRRHIZATE, TETRASODIUM GLUTAMATE DIACETATE, HYDROXYACETOPHENONE, SODIUM CHLORIDE, SALICYLIC ACID, PEG-20 HYDROGENATED CASTOR OIL, SORBITAN OLEATE, CAPRYLIC/CAPRIC TRIGLYCERIDE, GLYCERYL CAPRYLATE, SQUALANE, CETEARYL ALCOHOL, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, OXIDIZED CORN OIL, PYRUS MALUS (APPLE) SEED EXTRACT, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, OLEA EUROPAEA (OLIVE) FRUIT OIL, SIMMONDSIA CHINENSIS (JOJOBA) SEED EXTRACT, BUTYLENE GLYCOL, CAPRYLYL GLYCOL, LAURYL GLUCOSIDE, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, ARGININE, FRAGRANCE.\n',
+                        ]
+                    },
+                    {
+                        title: 'CONDITIONER',
+                        subTitle: 'PUREALITY EXTRA CARE CONDITIONER',
+                        desc1: 'FOR ALL HAIR TYPES<br/>PARABEN & MINERAL OIL FREE \n',
+                        desc2: 'DESIGNED IN NEW ZEALAND<br/>30ml／1.0.fl.oz',
+                        productImg: './img/product/p2.png',
+                        descList: [
+                            'Made from a variety of plant oils and extracts such as argania spinosa kernel oil, Extra Care Conditioner hydrates and nourishes hair while diminishing dryness and frizz away. Formulated to rejuvenate the hair and scalp with ingredients like oxided corn oil and certimonium chloride.\n',
+                            'DIRECTIONS: Apply only to the ends of your hair. Otherwise there could be hair follicles clogged, slower hair growth and increased oil production.\n',
+                            'INGREDIENTS:WATER, DIMETHICONE, CETEARYL ALCOHOL, PROPANEDIOL, CETRIMONIUM CHLORIDE, GLYCERYL STEARATE, BIS-AMINOPROPYL DIMETHICONE, ALCOHOL, GUAR HYDROXYPROPYLTRIMONIUM CHLORIDE, HYDROXYACETOPHENONE, HYDROXYETHYLCELLULOSE, TETRASODIUM GLUTAMATE DIACETATE, ARGANIA SPINOSA KERNEL OIL, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, PHYTOSTERYL OLEATE, PEG-20 HYDROGENATED CASTOR OIL, SORBITAN OLEATE, CAPRYLIC/CAPRIC TRIGLYCERIDE, GLYCERYL CAPRYLATE, SQUALANE, CARTHAMUS TINCTORIUS (SAFFLOWER) SEED OIL, OXIDIZED CORN OIL, PYRUS MALUS (APPLE) SEED EXTRACT, OLEA EUROPAEA (OLIVE) FRUIT OIL, SIMMONDSIA CHINENSIS (JOJOBA) SEED EXTRACT, BUTYLENE GLYCOL, CAPRYLYL GLYCOL, LAURYL GLUCOSIDE, ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER, ARGININE, FRAGRANCE.',
+                        ]
+                    },
+                    {
+                        title: 'SHOWER GEL\n',
+                        subTitle: 'PUREALITY HYDRATING SHOWER GEL\n',
+                        desc1: 'PRESERVATIVES & SILICON & MINERAL OIL  FREE',
+                        desc2: 'DESIGNED IN NEW ZEALAND<br/>30ml／1.0.fl.oz',
+                        productImg: './img/product/p3.png',
+                        descList: [
+                            'Rich lather makes skin feel smooth, extremely clean and easy to wash away. Under the help of moisture ingredients specially formulated to nourish skin and relieve dryness. The special fragrance makes the shower time comfortable and refreshing.\n',
+                            'DIRECTIONS: Apply to wet body with palms or a cleansing pad and Massage. Rinse with water. \n',
+                            'INGREDIENTS: WATER, MYRISTIC ACID, LAURIC ACID, POTASSIUM HYDROXIDE, GLYCERIN, SODIUM LAURETH SULFATE, COCAMIDE MEA, GLYCOL DISTEARATE, STEARIC ACID, SORBITOL, HYDROXYETHYLCELLULOSE, GLYCERYL CAPRYLATE, CAPRYLYL GLYCOL, TETRASODIUM GLUTAMATE DIACETATE,  POLYQUATERNIUM-7, DIPOTASSIUM GLYCYRRHIZATE, PHYTOSTERYL OLEATE, FRAGRANCE.\n',
+                        ]
+                    },
+                    {
+                        title: 'BODY EMULSION\n',
+                        subTitle: 'PUREALITY HYDRATING BODY EMULSION \n',
+                        desc1: 'PARABEN & MINERAL OIL  FREE \n',
+                        desc2: 'DESIGNED IN NEW ZEALAND<br/>30ml／1.0.fl.oz',
+                        productImg: './img/product/p4.png',
+                        descList: [
+                            'Formulated to improve skin moisture and elasticity. A smooth and easily absorbed lotion enriched with herbal oils and extracts penetrate into the skin to make your skin feel smoother, whiter and glow. Can be used on skin surface especially dry and rough areas.\n',
+                            'DIRECTIONS: Apply to wet body and dry/rough areas.\n',
+                            'INGREDIENTS:WATER, CYCLOPENTASILOXANE, GLYCERIN, BUTYLENE GLYCOL, DIMETHICONE, PEG-10 DIMETHICONE, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, SQUALANE, MACADAMIA TERNIFOLIA SEED OIL, SILICA DIMETHYL SILYLATE, DISTEARDIMONIUM HECTORITE, TREMELLA FUCIFORMIS SPOROCARP EXTRACT, HYDROXYACETOPHENONE, 1,2-HEXANEDIOL, CAPRYLYL GLYCOL, DIPROPYLENE GLYCOL, MAGNESIUM SULFATE, CITRIC ACID, NIACINAMIDE, TETRASODIUM GLUTAMATE DIACETATE, FRAGRANCE.',
+                        ]
+                    },
+                    {
+                        title: 'MULTI FUNCTIONAL CLEANSER\n',
+                        subTitle: 'PUREALITY MULTI FUNCTIONAL CLEANSER',
+                        desc1: 'PARABEN & SILICON & MINERAL OIL FREE \n',
+                        desc2: 'DESIGNED IN NEW ZEALAND<br/>30ml／1.0.fl.oz',
+                        productImg: './img/product/p4.png',
+                        descList: [
+                            'The multi-functional cleanser can be used to clean your skin but also your clothes even underwear. It can remove blots thoroughly and leave fresh fragrance, and it won’t hurt hand skin.\n',
+                            'DIRECTIONS: Mix the cleanse with water to produce rich foam to wash your face, body or underwear.\n',
+                            'INGREDIENTS:WATER, GLYCERIN, MYRISTIC ACID, STEARIC ACID, POTASSIUM HYDROXIDE, SODIUM LAURETH-4 CARBOXYLATE, LAURIC ACID, GLYCERYL STEARATE, PEG-32, BUTYLENE GLYCOL, HYDROGENATED LECITHIN, PHYTOSTERYL/OCTYLDODECYL LAUROYL GLUTAMATE, PEG-60 HYDROGENATED CASTOR OIL, TOCOPHEROL, HELIANTHUS ANNUUS (SUNFLOWER) SEED OIL, PEG-90M, DIPOTASSIUM GLYCYRRHIZATE, TETRASODIUM GLUTAMATE DIACETATE, HYDROXYACETOPHENONE, POLYQUATERNIUM-7, FRAGRANCE.\n',
+                        ]
+                    },
+                ],
+            });
+
         $('body').animate({'opacity': 1});
     })
 </script>

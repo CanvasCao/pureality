@@ -4,55 +4,98 @@ body {
 
 .products {
     margin-top: 108px;
+    margin-bottom: 100px;
 }
 
-.left {
+.productImg {
     padding: 50px 0;
     width: 51%;
     float: left;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
     background-image: url("../img/product/product_BG.jpg");
     background-repeat: no-repeat;
-    height: 800px;
+    height: 780px;
 }
 
-.left img {
+.productImg img {
     margin: 0 auto;
     display: block;
+}
+
+.product:nth-child(1) .img {
+    margin-top: -30px;
     margin-left: 136px;
 }
 
-.right {
-    padding: 40px 50px;
-    width: 49%;
-    float: right;
-    border: 1px solid #000;
+.product:nth-child(2) .img {
+    margin-top: 10px;
+    margin-left: 126px;
 }
 
-.right li {
+.product:nth-child(3) .img {
+    margin-top: -10px;
+    margin-left: 76px;
+}
+
+.product:nth-child(4) .img {
+    margin-top: -20px;
+    margin-left: 72px;
+}
+
+.product:nth-child(5) .img {
+    margin-top: -10px;
+    margin-left: 72px;
+}
+
+.productDesc {
+    padding: 40px 50px 20px;
+    width: 49%;
+    float: left;
+    /*border: 1px solid #000;*/
+    color: rgb(123, 123, 123);
+    word-break: break-all;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.productDesc li {
     margin-bottom: 20px;
     line-height: 1.4;
+    position: relative;
+}
+
+.productDesc li::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(123, 123, 123);
 }
 
 .title {
-    color: #F4CC5E;
+    color: rgb(210, 193, 14);
     text-align: center;
     font-size: 30px;
 }
 
 .subTitle {
-    color: #F4CC5E;
+    color: rgb(210, 193, 14);
     margin-bottom: 30px;
     text-align: center;
 }
 
 .desc1 {
     text-align: center;
-    color: #5E6568;
+    color: rgb(150, 146, 142);
     margin-bottom: 20px;
 }
 
 .desc2 {
     text-align: center;
-    color: #5E6568;
+    color: rgb(150, 146, 142);
 }
