@@ -14,15 +14,15 @@
             },
             hrefArr: [
                 'HOME',
-                // 'ABOUT US',
+                'ABOUT US',
                 'PERSONAL CARE',
-                // 'CONTACT US'
+                'CONTACT US'
             ],
             urlArr: [
                 'index.html',
-                // 'about-us.html',
+                'about-us.html',
                 'personal-care.html',
-                // 'contact-us.html'
+                'contact-us.html'
             ]
         };
         this.init();

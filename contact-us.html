@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no">
+    <!--content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"-->
+    <title>pureality</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/personal-care.css" />
+</head>
+<body>
+<div class='header'></div>
+<div class="innerC">
+    <img src="img/contact-us-all.jpg" width="100%">
+</div>
+
+<script src='js/tool/jquery-1.8.3.min.js'></script>
+<script src='js/module/header.js'></script>
+<script>
+    window.addEventListener('load', function () {
+        var header = new Header('.header', null);
+        header.initCur(3);
+        $('body').animate({'opacity': 1});
+    })
+</script>
+</body>
+</html>
