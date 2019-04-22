@@ -16,12 +16,14 @@
                 'HOME',
                 'ABOUT US',
                 'PERSONAL CARE',
+                'SKIN CARE',
                 'CONTACT US'
             ],
             urlArr: [
                 'index.html',
                 'about-us.html',
                 'personal-care.html',
+                'skin-care.html',
                 'contact-us.html'
             ]
         };
